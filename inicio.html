@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oca | Inicio</title>
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/inicio_mobile.css" media="(max-width: 645px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <h2>LA OCA 3</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="./inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./html/reglas.html">Reglas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="nav-mobile">
+        <a href="./inicio.html">Inicio</a>
+        <a href="./html/reglas.html">Reglas</a>
+    </nav>
+
+    <div id="intro">
+        <div id="jug1" class="jugador animate__animated animate__backInLeft">
+            <h1>Jugador 1</h1>
+            <input class="nombre" type="text" class="nombre" placeholder="Nombre Primer Jugador">
+            <input class="color" type="color">
+            <div name="jugador1" class="validarJugadores">Crear Jugador</div>
+            <div>
+                <p class="nombreVacio"></p>
+                <p class="coloresIguales"></p>
+            </div>
+        </div>
+
+        <div id="jug2" class="jugador animate__animated animate__backInRight">
+            <h1>Jugador 2</h1>
+            <input class="nombre" type="text" class="nombre" placeholder="Nombre Segundo Jugador">
+            <input class="color" type="color">
+            <div name="jugador2" class="validarJugadores">Crear Jugador</div>
+            <div>
+                <p class="nombreVacio"></p>
+                <p class="coloresIguales"></p>
+            </div>
+        </div>
+
+        <div id="dados" class="animate__animated animate__bounceInRight">
+            <button class="dado" id="dado_jugador1">1</button>
+            <button class="dado" id="dado_jugador2">1</button>
+        </div>
+
+        <div id="comienzo">
+            <div id="jugar">jugar</div>
+            <p id="ganador">Primero en jugar: <span id="nombre">nombre</span></p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h2>LA OCA 3</h2>
+        <p>© 2020</p>
+    </div>
+
+    <script src="./js/inicio/inicio.js"></script>
+    <script src="./js/inicio/dados.js"></script>
+    <script src="./js/inicio/datos.js"></script>
+</body>
+
+</html>

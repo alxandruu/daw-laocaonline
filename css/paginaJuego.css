@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+audio,
+.mobile {
+    display: none;
+}
+
+
+/* TABLERO */
+
+.ficha {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+#mesa {
+    padding: 0.5em;
+}
+
+.fila {
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+}
+
+#tablero {
+    background-color: #eddcd2;
+    border: 5px solid black;
+    height: auto;
+}
+
+#tablero .fila:first-child .casilla:first-child {
+    width: 300px;
+    background-image: url(../img/start.jpg);
+    background-size: 100% 100%;
+}
+
+#tablero .fila:last-child .casilla:last-child {
+    width: 300px;
+    background-image: url(../img/final.jpg);
+    background-size: 100% 100%;
+}
+
+#ficha1 {
+    background-color: #e63946;
+    top: 10px;
+}
+
+#ficha2 {
+    background-color: #457b9d;
+    top: 20px;
+}
+
+.casilla {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 1;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 0.6em;
+    position: relative;
+    background-color: #7CBB00;
+    color: white;
+    margin-left: 1em;
+    border: 3px solid black;
+    background-size: 100% 100%;
+}
+
+.casilla::after {
+    border-radius: 15px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+.fila:nth-child(2),
+.fila:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+
+/* CONTROLES */
+
+#controles {
+    background-color: #264653;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.5em;
+}
+
+#controles>* {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#controles div {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#controles div p:first-child {
+    background-color: #264653;
+    padding: 1em;
+    color: white;
+    border-radius: 1em;
+}
+
+#controles div p:last-child {
+    background-color: #2a9d8f;
+    padding: 1em;
+    color: white;
+    border-radius: 1em;
+}
+
+#controles div p {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#dado {
+    width: 150px;
+    background-color: #e76f51;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+    outline: none;
+    transition: background-color 500ms ease;
+}
+
+#dado:hover {
+    background-color: #e9c46a;
+    transition: background-color 500ms ease;
+}
+
+
+/* AD-COM */
+
+#ad-com {
+    padding: 1em;
+    height: 25vh;
+    background-color: #2a9d8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ad-com p {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+
+#footer {
+    height: 9vh;
+    padding: 0.4em;
+    background-color: #3e4444;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 10px;
+}
+
+
+/* CASILLAS ESPECIALES */
+
+#oca {
+    background-image: url(../img/oca.jpg);
+}
+
+#calavera {
+    background-image: url(../img/calavera.jpg);
+}
+
+#dados {
+    background-image: url(../img/dados.jpg);
+}
+
+#carcel {
+    background-image: url(../img/prision.jpg);
+}
+
+#posada {
+    background-image: url(../img/hostal.jpg);
+}
+
+#puente {
+    background-image: url(../img/puente.jpg);
+}
+
+#laberinto {
+    background-image: url(../img/laberinto.jpg);
+}

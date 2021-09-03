@@ -1,0 +1,47 @@
+.content {
+    height: auto;
+}
+
+body>* {
+    height: auto;
+}
+
+#nav-mobile {
+    display: block;
+}
+
+header nav {
+    display: none;
+    height: auto;
+}
+
+#nav-mobile {
+    background-color: #e6e2d3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#nav-mobile a {
+    font-size: 0.8em;
+    color: #3e4444;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+#nav-mobile a+a {
+    margin-left: 1em;
+}
+
+#nav-mobile a:active {
+    color: red;
+}
+
+#footer h2 {
+    display: none;
+}
+
+#footer {
+    height: auto;
+}

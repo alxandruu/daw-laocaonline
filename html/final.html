@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/_style.css">
+    <link rel="stylesheet" href="../css/_mobile.css" media="(max-width: 645px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Oca | Fin </title>
+
+</head>
+
+<body>
+    <header>
+        <h2>LA OCA 3</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./reglas.html">Reglas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="nav-mobile">
+        <a href="../inicio.html">Inicio</a>
+        <a href="./reglas.html">Reglas</a>
+    </nav>
+    <div class='content' id="final">
+        <div>
+            <h1>El ganador es....¡¡¡ <span id="ganador"></span> !!!</h1>
+        </div>
+
+    </div>
+    <div id="footer">
+        <h2>LA OCA 3</h2>
+        <p>© 2020</p>
+    </div>
+    <script>
+        document.getElementById('ganador').textContent = localStorage.getItem('ganador_oca');;
+    </script>
+
+</body>
+
+</html>

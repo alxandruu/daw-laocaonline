@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oca | Jugando</title>
+    <link rel="stylesheet" href="./css/paginaJuego.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div id="mesa">
+
+        <div id="tablero">
+            <div class="fila">
+                <div class="casilla">1
+                    <div class="ficha" id="ficha1"></div>
+                    <div class="ficha" id="ficha2"></div>
+                </div>
+                <div class="casilla">2</div>
+                <div class="casilla">3</div>
+                <div class="casilla">4</div>
+                <div class="casilla" id="oca">5</div>
+                <div class="casilla">6</div>
+                <div class="casilla">7</div>
+                <div class="casilla">8</div>
+                <div class="casilla">9</div>
+
+            </div>
+            <div class="fila">
+                <div class="casilla">10</div>
+                <div class="casilla" id="carcel">11</div>
+                <div class="casilla">12</div>
+                <div class="casilla">13</div>
+                <div class="casilla" id="puente">14</div>
+                <div class="casilla">15</div>
+                <div class="casilla" id="oca">16</div>
+                <div class="casilla">17</div>
+                <div class="casilla">18</div>
+            </div>
+            <div class="fila">
+                <div class="casilla">19</div>
+                <div class="casilla">20</div>
+                <div class="casilla" id="dados">21</div>
+                <div class="casilla">22</div>
+                <div class="casilla" id="posada">23</div>
+                <div class="casilla">24</div>
+                <div class="casilla">25</div>
+
+            </div>
+            <div class="fila">
+                <div class="casilla">26</div>
+                <div class="casilla">27</div>
+                <div class="casilla" id="calavera">28</div>
+                <div class="casilla">29</div>
+                <div class="casilla">30</div>
+                <div class="casilla" id="laberinto">31</div>
+
+            </div>
+            <div class="fila">
+                <div class="casilla">32</div>
+            </div>
+        </div>
+    </div>
+    <div id="controles">
+        <div>
+            <p>Turno :</p>
+            <p id='nombre_jugador'></p>
+        </div>
+        <button id="dado">1</button>
+    </div>
+    <div id="ad-com">
+        <p>
+            Tira el dado para empezar
+        </p>
+    </div>
+    <div id="footer">
+        <p>© 2020</p>
+    </div>
+    <audio id="audio_special" controls>
+        <source type="audio/wav" src="./sounds/special.wav">
+    </audio>
+    <audio id="audio_win" controls>
+        <source type="audio/wav" src="./sounds/win.wav">
+    </audio>
+    <script src="./js/paginaJuego/paginaJuego.js"></script>
+    <script src="./js/paginaJuego/casillasEspeciales.js"></script>
+
+</body>
+
+</html>
